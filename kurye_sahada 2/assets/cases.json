@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "Öfkeli Müşteri",
+    "category": "Zor Müşteriler",
+    "difficulty": "Orta",
+    "scenario": "Bir müşteriye teslimat için gittiniz. Müşteri gönderisinin geç geldiğini söyleyerek size yüksek sesle konuşmaya başladı.",
+    "customerDialogue": "Sabah beri sizi bekliyorum! Bu nasıl hizmet?",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Öncelikle yaşadığı gecikme için üzgün olduğumu belirtirim. Sesimi yükseltmeden, sakin bir tonla müşteriyi dinlerim. Gecikmenin sebebini kısaca ve dürüstçe açıklarım, tartışmaya girmeden teslimatı tamamlarım. Gerekirse müşteriyi şikayet/destek hattına yönlendiririm.",
+    "keywords": ["üzgün", "özür", "anlıyorum", "sakin", "dinlerim", "çözüm", "destek hattı", "yardımcı olurum"]
+  },
+  {
+    "id": 2,
+    "title": "Paketi Erken Açma İsteği",
+    "category": "Teslimat Problemleri",
+    "difficulty": "Kolay",
+    "scenario": "Müşteri, teslim almadan önce paketi orada açıp kontrol etmek istiyor ve bunun için ısrar ediyor.",
+    "customerDialogue": "Önce açıp bakayım, sağlam mı diye kontrol edeceğim.",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Müşteriye şirket prosedürü gereği paketin önce teslim alınıp imzalanması, ardından kontrol edilebileceğini nazikçe açıklarım. Hasar şüphesi varsa, teslim sonrası hasar bildirim sürecini nasıl başlatabileceğini anlatırım.",
+    "keywords": ["prosedür", "kural", "açıklarım", "anlıyorum", "hasar bildirimi", "nazikçe", "yönlendiririm"]
+  },
+  {
+    "id": 3,
+    "title": "Müşteri Evde Yok",
+    "category": "Adres Problemleri",
+    "difficulty": "Orta",
+    "scenario": "Adrese geldiniz ancak müşteri evde değil ve telefonlarına cevap vermiyor.",
+    "customerDialogue": "(Telefon açılmıyor)",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Birkaç kez arama denerim, kısa bir SMS/uygulama bildirimi bırakırım. Şirket prosedürüne göre belirlenen bekleme süresi kadar beklerim, ardından teslimatı erteleyip durumu sisteme not düşerim. Komşu/görevli teslim seçeneği varsa prosedüre uygun şekilde değerlendiririm.",
+    "keywords": ["arama", "sms", "bekleme süresi", "prosedür", "not düşerim", "ertelerim", "sisteme kaydederim"]
+  },
+  {
+    "id": 4,
+    "title": "Adres Değişikliği Talebi",
+    "category": "Adres Problemleri",
+    "difficulty": "Orta",
+    "scenario": "Müşteri teslimat sırasında adresini değiştirmek istiyor. Ancak yeni adres teslimat bölgesi dışında.",
+    "customerDialogue": "Aslında beni ofiste bırakın, adres orası olsun, çok uzak değil.",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Anlayışla karşılarım ancak yeni adresin teslimat bölgesi dışında kaldığını, bu değişikliği tek başıma yapamayacağımı açıklarım. Müşteriye çağrı merkezi/uygulama üzerinden resmi adres değişikliği talebinde bulunmasını öneririm.",
+    "keywords": ["bölge dışı", "prosedür", "çağrı merkezi", "resmi talep", "açıklarım", "yönlendiririm"]
+  },
+  {
+    "id": 5,
+    "title": "Doğrulama Yapmak İstemeyen Müşteri",
+    "category": "Saha Operasyonları",
+    "difficulty": "Zor",
+    "scenario": "Teslimat sırasında kimlik/kod doğrulaması gerekiyor ancak müşteri bunu yapmak istemiyor ve sorun çıkarıyor.",
+    "customerDialogue": "Ben her zaman böyle teslim alıyorum, neden şimdi doğrulama istiyorsunuz?",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Doğrulamanın kendi güvenliği ve gönderinin doğru kişiye ulaşması için zorunlu olduğunu sakin bir dille açıklarım. Israr ederse prosedürü uygulamadan teslim edemeyeceğimi belirtir, gerekirse operasyon/destek ekibini ararım.",
+    "keywords": ["güvenlik", "zorunlu", "prosedür", "açıklarım", "destek ekibi", "sakin"]
+  },
+  {
+    "id": 6,
+    "title": "Apartman Görevlisine Teslim",
+    "category": "Teslimat Problemleri",
+    "difficulty": "Kolay",
+    "scenario": "Müşteri evde değil ancak apartman görevlisi gönderiyi kendisinin alabileceğini söylüyor.",
+    "customerDialogue": "Ben alırım, dairesine ben bırakırım merak etmeyin.",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Şirket prosedürünün üçüncü kişiye teslime izin verip vermediğini kontrol ederim. İzin varsa görevlinin kimlik/iletişim bilgisini not ederek prosedüre uygun teslim ederim; izin yoksa müşteriyi arayıp onayını alırım veya teslimatı ertelerim.",
+    "keywords": ["prosedür", "onay", "kayıt", "not ederim", "ararım", "kontrol ederim"]
+  },
+  {
+    "id": 7,
+    "title": "Kişisel Hakaret",
+    "category": "Kriz Yönetimi",
+    "difficulty": "Zor",
+    "scenario": "Müşteri, gecikme nedeniyle size kişisel hakaretlerde bulunuyor.",
+    "customerDialogue": "Siz kuryeler hep aynısınız, işe yaramazsınız!",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Profesyonelliğimi korurum, tartışmaya veya karşılık vermeye girmem. Sakin bir dille durumu çözmeye odaklandığımı belirtirim. Hakaret devam ederse görüşmeyi kibarca sonlandırır ve durumu yöneticime/operasyona bildiririm.",
+    "keywords": ["profesyonel", "sakin", "tartışmam", "bildiririm", "yönetici", "kibarca"]
+  },
+  {
+    "id": 8,
+    "title": "Yanlış Gönderi İddiası",
+    "category": "Müşteri İletişimi",
+    "difficulty": "Orta",
+    "scenario": "Müşteri böyle bir gönderi beklemediğini söylüyor ve paketi kabul etmiyor.",
+    "customerDialogue": "Ben böyle bir gönderi beklemiyorum, bu bana ait değil.",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Gönderi bilgilerini (alıcı adı, adres, sipariş no) müşteriyle birlikte kontrol ederim. Gerçekten hataliysa iade prosedürünü başlatırım; müşteri emin değilse göndereni/satıcıyı aramasını önerir, teslimatı bekletirim.",
+    "keywords": ["kontrol ederim", "iade prosedürü", "doğrularım", "önerir", "bekletirim"]
+  },
+  {
+    "id": 9,
+    "title": "Hasarlı Paket",
+    "category": "Teslimat Problemleri",
+    "difficulty": "Orta",
+    "scenario": "Teslimat sırasında paketin dış yüzeyinde hasar fark ediyorsunuz.",
+    "customerDialogue": "(Müşteri henüz fark etmedi)",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Hasarı müşteriden saklamam; teslimattan önce durumu kendisine açıkça gösterir ve bildiririm. Hasar tutanağı/fotoğraf sürecini başlatır, müşteriye kabul edip etmeme hakkı olduğunu açıklarım.",
+    "keywords": ["şeffaf", "bildiririm", "tutanak", "fotoğraf", "gösteririm", "açıklarım"]
+  },
+  {
+    "id": 10,
+    "title": "Kapıda Bırakma Talebi",
+    "category": "Profesyonel Davranış",
+    "difficulty": "Kolay",
+    "scenario": "Müşteri evde olmadığını belirtip paketi kapının önüne bırakmanızı istiyor.",
+    "customerDialogue": "Evde değilim, paketi kapının önüne bırak.",
+    "question": "Bu durumda ne yaparsınız?",
+    "recommendedAnswer": "Şirket prosedürünün kapıda bırakmaya izin verip vermediğini kontrol ederim. İzin varsa fotoğraf kanıtıyla bırakır ve müşteriye bildiririm; izin yoksa alternatif teslim seçeneklerini (yeniden deneme, komşuya teslim vb.) müşteriyle görüşürüm.",
+    "keywords": ["prosedür", "fotoğraf", "kanıt", "bildiririm", "alternatif", "kontrol ederim"]
+  }
+]
