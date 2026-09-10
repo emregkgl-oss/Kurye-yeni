@@ -1,0 +1,45 @@
+name: Build APK
+
+# Her main/master branch'ine push yapıldığında veya manuel tetiklendiğinde çalışır
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu indir
+        uses: actions/checkout@v4
+
+      - name: Java kurulumu (Android derlemesi için gerekli)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Flutter SDK kurulumu
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: 'stable'
+
+      - name: android/ ve ios/ platform klasörlerini oluştur
+        run: |
+          if [ ! -d "android" ]; then
+            flutter create --org com.kuryesahada --project-name kurye_sahada --platforms=android .
+          fi
+
+      - name: Bağımlılıkları indir
+        run: flutter pub get
+
+      - name: Release APK derle
+        run: flutter build apk --release
+
+      - name: APK'yı yükle (Actions sekmesinden indirilebilir)
+        uses: actions/upload-artifact@v4
+        with:
+          name: kurye-sahada-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
